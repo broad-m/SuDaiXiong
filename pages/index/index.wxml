@@ -1,0 +1,32 @@
+
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<navigator class='navigator'>
+<view class='navigator-text'>Notice: The arrival time of incomes and transfer...</view>
+<view class='navigator-arrow'></view>
+</navigator>
+
+<view class='news-container'>
+<view class='news-item'>1、 资讯1</view>
+<view class='news-item'>2、 资讯2</view>
+<view class='news-item'>3、 资讯3</view>
+<view class='news-item'>4、 资讯4</view>
+</view>
+
+<view class='service'>
+我们的服务
+</view>
+<view class='service-container'>
+<view class='service-item'>精准评测</view>
+<view class='service-item'>征信查询</view>
+<view class='service-item'>房产估值</view>
+<view class='service-item'>汽车估值</view>
+</view>
+
