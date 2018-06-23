@@ -1,0 +1,51 @@
+<!--pages/profile/profile.wxml-->
+<view class='page'>
+  <view class='profile-box'>
+
+    <view class='profile'>
+      <open-data class='avatar' type='userAvatarUrl'></open-data>
+
+      <view class='brief-box'>
+        <open-data class='realname' type='userNickName'></open-data>
+      </view>
+
+
+      <navigator class='perfect-info' url='/pages/pefectInfo/pefectInfo'>
+        完善资料
+        <view class='navigator-arrow'></view>
+      </navigator>
+    </view>
+
+
+  </view>
+
+  <view class='apply-title'>我的申请</view>
+  <view class='apply'>
+    <navigator class='apply-item' url='/pages/checkProgress/checkProgress'>
+      查询进度
+    </navigator>
+    <navigator class='apply-item'>
+      已申请
+    </navigator>
+  </view>
+
+  <view class='apply-title'>
+    我的服务
+    <view class='help'>
+      <text class='help-text'>帮助</text>
+      <image class='help-icon' src='/images/help.png'></image>
+    </view>
+
+  </view>
+  <view class='apply'>
+    <navigator class='apply-item'>
+      我的客服
+    </navigator>
+    <navigator class='apply-item'>
+      邀请好友
+    </navigator>
+  </view>
+
+
+  <button class="weui-btn mini-btn button-hover btn-exit" type='warn'>退出登录</button>
+</view>

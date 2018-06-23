@@ -1,0 +1,97 @@
+/* pages/profile/profile.wxss */
+.page{
+  font-size: 30rpx;
+}
+.profile-box {
+  margin: 40rpx 30rpx;
+}
+
+.profile {
+  position: relative;
+  overflow: hidden;
+}
+
+.avatar {
+  float: left;
+  border-radius: 50%;
+  width: 180rpx;
+  height: 180rpx;
+}
+
+.brief-box {
+  overflow: hidden;
+  padding-top: 40rpx;
+  font-size: 30rpx;
+}
+
+.perfect-info {
+  position: absolute;
+  right: 0;
+  padding-right: 50rpx;
+  top: 50rpx;
+  font-size: 30rpx;
+}
+
+.perfect-info .navigator-arrow {
+  right: 0;
+  top: 22rpx;
+  position: absolute;
+}
+
+.navigator-arrow:after {
+  content: " ";
+  display: inline-block;
+  height: 18rpx;
+  width: 18rpx;
+  border-width: 4rpx 4rpx 0 0;
+  border-color: #2d2d2d;
+  border-style: solid;
+  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  position: absolute;
+  top: 50%;
+  margin-top: -8rpx;
+  right: 28rpx;
+  font-weight: bold;
+}
+
+.apply-title{
+  padding-left: 60rpx;
+  margin-bottom:10rpx;
+}
+.apply-title .help{
+  float: right;
+  padding-right: 60rpx;
+}
+.apply-title .help-text{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+.apply-title .help-icon{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+
+}
+.apply{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 30rpx;
+  margin-bottom:25rpx;
+}
+
+
+.apply-item{
+  width: 45%;
+  height: 200rpx;
+  line-height: 200rpx;
+  text-align: center;
+  border: 5rpx solid #eee;
+  font-weight: bold;
+}
+
+.btn-exit{
+  margin-top: 100rpx;
+}

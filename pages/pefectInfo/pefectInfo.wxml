@@ -1,0 +1,197 @@
+<!--pages/pefectInfo/pefectInfo.wxml-->
+
+
+<view class='page'>
+
+
+  <view class="weui-cells weui-cells_after-title">
+
+
+    <!-- 姓名 -->
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">姓名</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入"></input>
+      </view>
+    </view>
+
+    <!-- 性别 -->
+    <view class="weui-cell">
+      <view class="weui-cell__hd">
+        <view class="weui-label">性别</view>
+      </view>
+      <view class="weui-cell__bd">
+        <radio-group bindchange="genderChange">
+          <label wx:for="{{genderArray}}" wx:key="{{item.value}}" class="inline-label">
+            <radio class="weui-check" value='{{item.value}}' checked='{{item.checked}}'></radio>
+            <view class="weui-cell__hd weui-check__hd_in-checkbox">
+              <icon class="weui-icon-checkbox_circle" size='23' type='circle' wx:if="{{!item.checked}}"></icon>
+              <icon class="weui-icon-checkbox_success" size='23' type='success' wx:if="{{item.checked}}"></icon>
+            </view>
+            <view class="weui-cell__bd">{{item.key}}</view>
+          </label>
+        </radio-group>
+      </view>
+    </view>
+
+    <!-- 婚否 -->
+    <view class="weui-cell">
+      <view class="weui-cell__hd">
+        <view class="weui-label">婚否</view>
+      </view>
+      <view class="weui-cell__bd">
+        <radio-group bindchange="marriageChange">
+          <label wx:for="{{marriageArray}}" wx:key="{{item.value}}" class="inline-label">
+            <radio class="weui-check" value='{{item.value}}' checked='{{item.checked}}'></radio>
+            <view class="weui-cell__hd weui-check__hd_in-checkbox">
+              <icon class="weui-icon-checkbox_circle" size='23' type='circle' wx:if="{{!item.checked}}"></icon>
+              <icon class="weui-icon-checkbox_success" size='23' type='success' wx:if="{{item.checked}}"></icon>
+            </view>
+            <view class="weui-cell__bd">{{item.key}}</view>
+          </label>
+        </radio-group>
+      </view>
+    </view>
+
+
+    <!-- 出生年月 -->
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">出生年月</view>
+      </view>
+      <view class="weui-cell__bd">
+        <picker mode="date" value="{{date}}" bindchange="bindDateChange">
+          <input class="weui-input" value='{{date}}' placeholder='请选择'></input>
+        </picker>
+      </view>
+    </view>
+
+    <!-- 所在城市 -->
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">所在城市</view>
+      </view>
+      <view class="weui-cell__bd">
+        <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+
+          <input disabled class="weui-input" value='{{location}}' placeholder='请选择'></input>
+
+        </picker>
+      </view>
+    </view>
+
+    <!-- 联系电话 -->
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">联系电话</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入"></input>
+      </view>
+    </view>
+
+    <!-- 详细住址 -->
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">详细住址</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入"></input>
+      </view>
+    </view>
+
+    <!-- 身份 -->
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">身份</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入"></input>
+      </view>
+    </view>
+
+    <!-- 最高学历 -->
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">最高学历</view>
+      </view>
+      <view class="weui-cell__bd">
+        <picker mode="selector" bindchange="bindEducation" value="{{eduIndex}}" range="{{eduArray}}">
+          <input disabled class="weui-input" value='{{eduArray[eduIndex]}}' placeholder='请选择'></input>
+        </picker>
+      </view>
+    </view>
+
+    <!-- 职位 -->
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">职位</view>
+      </view>
+      <view class="weui-cell__bd">
+        <picker mode="selector" bindchange="bindPosition" value="{{posIndex}}" range="{{posArray}}">
+          <input disabled class="weui-input" value='{{posArray[posIndex]}}' placeholder='请选择'></input>
+        </picker>
+      </view>
+    </view>
+
+    <!-- 月收入 -->
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">月收入</view>
+      </view>
+      <view class="weui-cell__bd">
+        <picker mode="selector" bindchange="bindIncome" value="{{incomeIndex}}" range="{{incomeArray}}">
+          <input disabled class="weui-input" value='{{incomeArray[incomeIndex]}}' placeholder='请选择'></input>
+        </picker>
+      </view>
+    </view>
+
+    <!-- 个人信用 -->
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">个人信用</view>
+      </view>
+      <view class="weui-cell__bd">
+        <picker mode="selector" bindchange="bindCredit" value="{{creditIndex}}" range="{{creditArray}}">
+          <input disabled class="weui-input" value='{{creditArray[creditIndex]}}' placeholder='请选择'></input>
+        </picker>
+      </view>
+    </view>
+
+    <!-- 房产 -->
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">房产</view>
+      </view>
+      <view class="weui-cell__bd">
+        <picker mode="selector" bindchange="bindHouse" value="{{houseIndex}}" range="{{houseArray}}">
+          <input disabled class="weui-input" value='{{houseArray[houseIndex]}}' placeholder='请选择'></input>
+        </picker>
+      </view>
+    </view>
+
+    <!-- 车产 -->
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">车产</view>
+      </view>
+      <view class="weui-cell__bd">
+        <picker mode="selector" bindchange="bindCar" value="{{carIndex}}" range="{{carArray}}">
+          <input disabled class="weui-input" value='{{carArray[carIndex]}}' placeholder='请选择'></input>
+        </picker>
+      </view>
+    </view>
+
+
+
+  </view>
+
+  <view class='btn-oparator'>
+    <button class="weui-btn mini-btn" type='primary' size='mini' bindtap='saveProfile'>保存</button>
+    <button class="weui-btn mini-btn" type='default' size='mini' bindtap='cancelProfile'>取消</button>
+  </view>
+
+
+</view>

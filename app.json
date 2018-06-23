@@ -1,8 +1,11 @@
 {
   "pages": [
+    "pages/checkProgress/checkProgress",
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/discover/discover"
+    "pages/pefectInfo/pefectInfo",
+    "pages/profile/profile",
+    "pages/discover/discover",
+    "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -29,8 +32,8 @@
         "selectedIconPath": "images/icon_component_HL.png"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "日志",
+        "pagePath": "pages/profile/profile",
+        "text": "我",
         "iconPath": "images/icon_API.png",
         "selectedIconPath": "images/icon_API_HL.png"
       }

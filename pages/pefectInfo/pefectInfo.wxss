@@ -1,0 +1,19 @@
+/* pages/pefectInfo/pefectInfo.wxss */
+
+.inline-label{
+  display: inline-block;
+  width:50%;
+}
+
+.inline-label view{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.btn-oparator {
+  text-align: center;
+}
+
+.btn-oparator button{
+  margin: 25rpx 35rpx;
+}

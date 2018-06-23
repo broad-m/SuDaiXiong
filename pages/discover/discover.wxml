@@ -1,2 +1,23 @@
 <!--pages/discover/discover.wxml-->
-<text>pages/discover/discover.wxml</text>
+<view class='page'>
+  <view class='weui-flex catalog'>
+
+    <view class='weui-flex__item'>分类:</view>
+    <view wx:for='{{catalogs}}' 
+          wx:key='*this' 
+          bindtap='selectCatalog' 
+          data-item='{{item}}'
+          class='weui-flex__item {{item.selected?"selected":""}}'>
+          {{item.title}}
+    </view>
+  </view>
+
+
+
+
+
+
+  <view class='catalog-content' wx:for='{{catalogs}}' wx:key='*this' wx:if="{{item.selected}}">
+  <view>{{item.title}}</view>
+  </view>
+</view>

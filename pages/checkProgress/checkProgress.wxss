@@ -1,0 +1,14 @@
+/* pages/checkProgress/checkProgress.wxss */
+.page{
+  font-size: 30rpx;
+}
+.catalog{
+  width: 100%;
+  justify-content: space-between;
+}
+.catalog .selected{
+  color:blue;
+}
+.catalog view{
+  text-align: center;
+}
