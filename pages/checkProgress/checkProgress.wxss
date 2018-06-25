@@ -1,14 +1,78 @@
 /* pages/checkProgress/checkProgress.wxss */
-.page{
+
+.page {
   font-size: 30rpx;
 }
-.catalog{
+
+.catalog {
   width: 100%;
   justify-content: space-between;
 }
-.catalog .selected{
-  color:blue;
+
+.catalog .selected {
+  color: blue;
 }
-.catalog view{
+
+.catalog view {
   text-align: center;
+}
+
+.catalog-content {
+  padding: 10px 15px;
+  position: relative;
+  border-bottom: 1px solid #d9d9d9;
+  overflow: hidden;
+}
+
+.catalog-item-top {
+  position: relative;
+  overflow: hidden;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 120rpx;
+  height: 120rpx;
+  vertical-align: middle;
+}
+
+.brief {
+  font-size: 30rpx;
+  color: red;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.distributor {
+  font-size: 30rpx;
+  color: red;
+  position: absolute;
+  right: 0;
+  top: 38rpx;
+}
+
+.catalog-item-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10rpx 0;
+}
+
+.catalog-item-bottom .cell {
+  height: 120rpx;
+}
+
+.catalog-item-bottom .cell text {
+  text-align: center;
+  display: block;
+  padding: 10rpx 0;
+  margin: 0;
+}
+
+.cell-last {
+  background: #dc2525;
+  color: white;
+  border-radius: 50%;
+  line-height: 120rpx;
+  padding: 5rpx 25rpx;
 }

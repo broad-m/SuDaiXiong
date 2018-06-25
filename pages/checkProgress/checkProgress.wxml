@@ -8,7 +8,7 @@
 
       <view class='weui-flex catalog'>
         <text class='weui-flex__item'>筛选:</text>
-        <view wx:for='{{catalogs}}' wx:key='*this' bindtap='selectCatalog' data-item='{{item}}' class='weui-flex__item {{item.selected?"selected":""}}'>
+        <view wx:for='{{catalogs}}' wx:key='{{item.id}}' bindtap='selectCatalog' data-item='{{item}}' class='weui-flex__item {{item.selected?"selected":""}}'>
           {{item.title}}
         </view>
       </view>
@@ -17,6 +17,66 @@
 
 
   </view>
+
+  <view class='catalog-content' wx:for='{{catalogs}}' wx:key='{{item.id}}' wx:if="{{item.selected}}">
+
+    <view wx:if="{{item.id === 0}}">
+
+      <view class='catalog-item'>
+        <view class='catalog-item-top'>
+          <image class='avatar' src="/images/pingan.jpg"></image>
+          <text class='brief'>平安银行 - 车抵贷</text>
+          <text class='distributor'>渠道商:张**</text>
+        </view>
+        <view class='catalog-item-bottom'>
+          <view class='cell'>
+            <text>100</text>
+            <text>贷款金额 (万)</text>
+          </view>
+          <view class='cell'>
+            <text>2018-03-09</text>
+            <text>申请时间</text>
+          </view>
+          <view class='cell'>
+            <text>无</text>
+            <text>放款时间</text>
+          </view>
+          <view class='cell cell-last'>
+            渠道终止
+          </view>
+        </view>
+      </view>
+
+      <view class='catalog-item'>
+        <view class='catalog-item-top'>
+          <image class='avatar' src="/images/pingan.jpg"></image>
+          <text class='brief'>平安银行 - 车抵贷</text>
+          <text class='distributor'>渠道商:张**</text>
+        </view>
+        <view class='catalog-item-bottom'>
+          <view class='cell'>
+            <text>100</text>
+            <text>贷款金额 (万)</text>
+          </view>
+          <view class='cell'>
+            <text>2018-03-09</text>
+            <text>申请时间</text>
+          </view>
+          <view class='cell'>
+            <text>无</text>
+            <text>放款时间</text>
+          </view>
+          <view class='cell cell-last'>
+            自行终止
+          </view>
+        </view>
+      </view>
+
+    </view>
+
+  </view>
+
+
 
 
 

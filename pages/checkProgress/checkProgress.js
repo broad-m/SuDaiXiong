@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    selectedIndex:0,
     catalogs: [{
       id: 0,
       title: '全部',
@@ -29,6 +30,7 @@ Page({
     if (selectedId === this.data.selectedIndex) {
       return false;
     }
+    var catalogs = this.data.catalogs;
     catalogs.forEach(function (item, index, arr) {
       if (index === selectedId) {
         item.selected = true;
