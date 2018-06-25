@@ -1,7 +1,10 @@
 {
   "pages": [
-    "pages/checkProgress/checkProgress",
     "pages/index/index",
+    "pages/grabOrder/grabOrder",
+    "pages/myChannel/myChannel",
+    "pages/applied/applied",
+    "pages/checkProgress/checkProgress",
     "pages/pefectInfo/pefectInfo",
     "pages/profile/profile",
     "pages/discover/discover",

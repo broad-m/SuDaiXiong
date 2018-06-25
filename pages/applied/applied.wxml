@@ -1,7 +1,6 @@
-<!--pages/checkProgress/checkProgress.wxml-->
+<!--pages/applied/applied.wxml-->
 
 <view class='page'>
-
   <view class="weui-cells weui-cells_after-title">
     <view class="weui-cell">
       <view class='weui-flex catalog'>
@@ -13,10 +12,10 @@
     </view>
   </view>
 
+
   <view class='catalog-content' wx:for='{{catalogs}}' wx:key='{{item.id}}' wx:if="{{item.selected}}">
 
     <view wx:if="{{item.id === 0}}">
-
       <view class='catalog-item'>
         <view class='catalog-item-top'>
           <image class='avatar' src="/images/pingan.jpg"></image>
@@ -38,16 +37,42 @@
           </view>
           <view class='cell'>
             <view class='cell-last'>
-              待审核
-            </view>
-            <view class='catalog-item-btn'>
-              <button class="weui-btn mini-btn" type='default' size='mini' bindtap='cancelApply'>终止申请</button>
+              渠道中止
             </view>
           </view>
         </view>
 
       </view>
+       <view class='catalog-item'>
+        <view class='catalog-item-top'>
+          <image class='avatar' src="/images/pingan.jpg"></image>
+          <text class='brief'>平安银行 - 车抵贷</text>
+          <text class='distributor'>渠道商:张**</text>
+        </view>
+        <view class='catalog-item-bottom'>
+          <view class='cell'>
+            <text>100</text>
+            <text>贷款金额 (万)</text>
+          </view>
+          <view class='cell'>
+            <text>2018-03-09</text>
+            <text>申请时间</text>
+          </view>
+          <view class='cell'>
+            <text>无</text>
+            <text>放款时间</text>
+          </view>
+          <view class='cell'>
+            <view class='cell-last'>
+              自行中止
+            </view>
+          </view>
+        </view>
 
+      </view>
+    </view>
+
+    <view wx:if="{{item.id === 1}}">
       <view class='catalog-item'>
         <view class='catalog-item-top'>
           <image class='avatar' src="/images/pingan.jpg"></image>
@@ -68,51 +93,19 @@
             <text>放款时间</text>
           </view>
           <view class='cell'>
-            <view class='cell-last'>审核中</view>
+            <view class='cell-last'>
+              已完成
+            </view>
             <view class='catalog-item-btn'>
-              <button class="weui-btn mini-btn" type='default' size='mini' bindtap='cancelApply'>终止申请</button>
+              <button class="weui-btn mini-btn" type='default' size='mini' bindtap='cancelApply'>评价</button>
             </view>
           </view>
         </view>
-      </view>
 
-      <view class='catalog-item'>
-        <view class='catalog-item-top'>
-          <image class='avatar' src="/images/pingan.jpg"></image>
-          <text class='brief'>平安银行 - 车抵贷</text>
-          <text class='distributor'>渠道商:张**</text>
-        </view>
-        <view class='catalog-item-bottom'>
-          <view class='cell'>
-            <text>100</text>
-            <text>贷款金额 (万)</text>
-          </view>
-          <view class='cell'>
-            <text>2018-03-09</text>
-            <text>申请时间</text>
-          </view>
-          <view class='cell'>
-            <text>无</text>
-            <text>放款时间</text>
-          </view>
-          <view class='cell'>
-            <view class='cell-last'>放款中</view>
-            <view class='catalog-item-btn'>
-              <button style='opacity:0' class="weui-btn mini-btn" type='default' size='mini'>终止申请</button>
-            </view>
-          </view>
-        </view>
       </view>
-
     </view>
 
   </view>
 
-
-
-
-
-
-  <button class="weui-btn mini-btn" type='default' bindtap='backToHome'>返回首页</button>
 
 </view>

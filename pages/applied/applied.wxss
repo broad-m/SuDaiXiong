@@ -1,12 +1,19 @@
-/* pages/checkProgress/checkProgress.wxss */
-
+/* pages/applied/applied.wxss */
 .page {
   font-size: 30rpx;
 }
 
 .catalog {
   width: 100%;
-  justify-content: space-between;
+  justify-content: flex-start;
+}
+
+.catalog text{
+  flex: 0.5;
+}
+.catalog view{
+  flex: 1;
+  text-align: left;
 }
 
 .catalog .selected {
@@ -16,6 +23,7 @@
 .catalog view {
   text-align: center;
 }
+
 
 .catalog-content {
   position: relative;
