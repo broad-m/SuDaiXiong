@@ -1,7 +1,4 @@
-// pages/profile/profile.js
-
-
-
+// pages/waitingProcess/watingProcess.js
 Page({
 
   /**
@@ -11,39 +8,11 @@ Page({
   
   },
 
-  logout:function(){
-    wx.showModal({
-      title: '友情提示',
-      content: '您确定要退出吗?',
-      confirmText: "确定",
-      cancelText: "手滑",
-      success: function (res) {
-        console.log(res);
-        if (res.confirm) {
-          console.log('用户点击主操作')
-        } else {
-          console.log('用户点击辅助操作')
-        }
-      }
-    });
-  },
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-      //查看是否授权
-      wx.getSetting({
-        success:function(res){
-          if (res.authSetting['scope.userInfo']){
-            wx.getUserInfo({
-              success: function (res) {
-                console(res.userInfo)
-              }
-            })
-          }
-        }
-      })
+  
   },
 
   /**

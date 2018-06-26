@@ -6,7 +6,9 @@ page {
   font-size: 32rpx;
   line-height: 1.6;
 }
-
+swiper{
+  height: 280rpx;
+}
 
 .swiper-item{
   display: block;
@@ -21,7 +23,7 @@ page {
 
 
 .navigator {
-  padding: 20rpx 30rpx;
+  padding: 15rpx 30rpx;
   position: relative;
   display: flex;
   align-items: center;
@@ -74,15 +76,15 @@ page {
 }
 
 .news-item{
-padding: 20rpx 0;
+padding: 0;
 overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .service{
-  padding: 20rpx 20rpx;
-   background: #D8D8D8;
+  padding: 15rpx 20rpx;
+   background:#f8D8D8;
 }
 
 .service-container{
@@ -94,9 +96,9 @@ overflow: hidden;
 }
 
 .service-item{
-  width: 48%;
-  height: 120px;
-  line-height: 120px;
+  width: 49%;
+  height: 100px;
+  line-height: 100px;
   text-align: center;
   background-color: #eeeeee;
   margin-bottom: 5px;

@@ -1,38 +1,88 @@
 /* pages/grabOrder/grabOrder.wxss */
 
-.order-item{
+.order-item:first-child {
+  border-top: 1px solid #d9d9d9;
+}
+
+.order-item {
   position: relative;
   overflow: hidden;
   border-bottom: 1px solid #d9d9d9;
-  padding: 10px 15px;
   display: flex;
+  padding: 20rpx 0;
 }
 
-.order-item button{
+.order-item .cell {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-item button {
   background: #f92d2d;
   color: white;
   display: inline-block;
-  width:auto;
+  font-size: 12px;
+  padding: 0 8px;
+  margin-right: 2px;
 }
 
-.avatar image{
+.cell.checkbox {
+  flex: 1;
+}
+
+.cell.avatar {
+  flex: 2;
+}
+
+.cell.info {
+  flex: 6;
+}
+
+image.avatar {
   width: 120rpx;
   height: 120rpx;
   border-radius: 50%;
 }
 
-.info{
+.info {
   font-size: 30rpx;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 170px;
 }
 
-.info label{
+.info view {
+  display: block;
+  width: 100%;
+}
+
+.info label {
   display: inline-block;
   width: 150rpx;
   text-align: right;
 }
 
-.info text{
+.info text {
   display: inline-block;
-  width: 220rpx;
   text-align: center;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15rpx;
+}
+.label-selectAll{
+  display: inline-block;
+  width: auto;
+}
+.label-selectAll view{
+  display: inline-block;
+}
+.btn-selectAll{
+  float: right;
 }

@@ -1,5 +1,69 @@
 /* pages/discover/discover.wxss */
 
-.catalog .selected{
-  color:darkgrey;
+.catalog {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.catalog .selected {
+  color: blue;
+}
+.catalog text {
+  flex: 1;
+}
+.catalog view {
+  text-align: center;
+  flex: 2;
+}
+
+.product-content {
+  position: relative;
+}
+
+.product-item {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-item .cell{
+  display: flex;
+  align-items: center;
+}
+
+.product-item .right{
+  flex-direction: column;
+}
+
+.product-item .right button{
+  margin: 10rpx 0;
+}
+
+.popularity{
+  color: #5f5d45;
+}
+.applyCount{
+  color: #9e9d8c;
+}
+
+
+
+.avatar {
+  border-radius: 50%;
+  width: 120rpx;
+  height: 120rpx;
+  vertical-align: middle;
+}
+
+image.product{
+  width: 166px;
+  height: 90px;
+}
+
+.brief{
+  color: #e17009;
+  font-weight: bold;
 }

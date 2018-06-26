@@ -1,14 +1,15 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/myChannel/myChannel",
     "pages/grabOrder/grabOrder",
+    "pages/discover/discover",
+    "pages/myChannel/myChannel",
     "pages/applied/applied",
     "pages/checkProgress/checkProgress",
     "pages/pefectInfo/pefectInfo",
     "pages/profile/profile",
-    "pages/discover/discover",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/waitingProcess/watingProcess"
   ],
   "window": {
     "backgroundTextStyle": "light",

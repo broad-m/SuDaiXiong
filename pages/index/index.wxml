@@ -14,10 +14,10 @@
 </navigator>
 
 <view class='news-container'>
-<view class='news-item'>1、 资讯1</view>
-<view class='news-item'>2、 资讯2</view>
-<view class='news-item'>3、 资讯3</view>
-<view class='news-item'>4、 资讯4</view>
+<view class='news-item'>1、习近平会见法国总理菲利普(图)</view>
+<view class='news-item'>2、刘结一会见中国国民党前主席吴伯雄</view>
+<view class='news-item'>3、大马反对派上台，意味着对华关系冷淡吗？</view>
+<view class='news-item'>4、上海外滩现奇异天象 市民纷纷驻足观看</view>
 </view>
 
 <view class='service'>
