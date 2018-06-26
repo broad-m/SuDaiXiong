@@ -48,6 +48,6 @@
     </navigator>
   </view>
 
-
+  <navigator class="weui-btn mini-btn" type='default' url='/pages/myChannel/myChannel'>我的渠道</navigator>
   <button class="weui-btn mini-btn button-hover btn-exit" type='warn'>退出登录</button>
 </view>

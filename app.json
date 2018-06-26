@@ -1,8 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/grabOrder/grabOrder",
     "pages/myChannel/myChannel",
+    "pages/grabOrder/grabOrder",
     "pages/applied/applied",
     "pages/checkProgress/checkProgress",
     "pages/pefectInfo/pefectInfo",
