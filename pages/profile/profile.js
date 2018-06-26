@@ -3,12 +3,28 @@
 
 
 Page({
+  onShareAppMessage: function (res) {
+    debugger
+    if (res.from === 'button') {
+      // 来自页面内转发按钮
+      console.log(res.target)
+    }
+    return {
+      title: '欢迎使用苏贷熊',
+      path: '/pages/index/index'
+    }
+  },
 
   /**
    * 页面的初始数据
    */
   data: {
   
+  },
+  share:function(){
+    wx.showShareMenu({
+      withShareTicket: true
+    })
   },
 
   logout:function(){

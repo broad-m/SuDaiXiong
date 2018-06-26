@@ -32,5 +32,10 @@ Page({
     this.setData({
       duration: e.detail.value
     })
+  },
+  onLoad:function(){
+    wx.showShareMenu({
+      withShareTicket: true
+    })
   }
 })

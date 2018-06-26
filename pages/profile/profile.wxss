@@ -1,7 +1,9 @@
 /* pages/profile/profile.wxss */
-.page{
+
+.page {
   font-size: 30rpx;
 }
+
 .profile-box {
   margin: 40rpx 30rpx;
 }
@@ -54,44 +56,58 @@
   font-weight: bold;
 }
 
-.apply-title{
+.apply-title {
   padding-left: 60rpx;
-  margin-bottom:10rpx;
+  margin-bottom: 10rpx;
 }
-.apply-title .help{
+
+.apply-title .help {
   float: right;
   padding-right: 60rpx;
 }
-.apply-title .help-text{
+
+.apply-title .help-text {
   display: inline-block;
   vertical-align: middle;
   margin-right: 10rpx;
 }
-.apply-title .help-icon{
+
+.apply-title .help-icon {
   display: inline-block;
   width: 20px;
   height: 20px;
   vertical-align: middle;
-
 }
-.apply{
+
+.apply {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 0 30rpx;
-  margin-bottom:25rpx;
+  margin-bottom: 25rpx;
 }
 
-
-.apply-item{
+.apply-item {
+  display: block;
   width: 45%;
   height: 200rpx;
   line-height: 200rpx;
   text-align: center;
   border: 5rpx solid #eee;
   font-weight: bold;
+  font-size: 30rpx;
+  outline: none;
+  position: relative;
 }
 
-.btn-exit{
+.btn-share {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+}
+
+.btn-exit {
   margin-top: 100rpx;
 }

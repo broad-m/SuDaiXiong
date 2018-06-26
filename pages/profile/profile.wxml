@@ -43,11 +43,13 @@
     <navigator class='apply-item'>
       我的客服
     </navigator>
-    <navigator class='apply-item'>
+    <view class='apply-item'>
       邀请好友
-    </navigator>
+      <button class='btn-share' open-type="share"></button>
+    </view>
   </view>
 
   <navigator class="weui-btn mini-btn" type='default' url='/pages/myChannel/myChannel'>客户经理-我的渠道</navigator>
+
   <button class="weui-btn mini-btn button-hover btn-exit" type='warn' bindtap='logout'>退出登录</button>
 </view>

@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/profile/profile",
     "pages/index/index",
     "pages/grabOrder/grabOrder",
     "pages/discover/discover",
@@ -7,7 +8,6 @@
     "pages/applied/applied",
     "pages/checkProgress/checkProgress",
     "pages/pefectInfo/pefectInfo",
-    "pages/profile/profile",
     "pages/logs/logs",
     "pages/waitingProcess/watingProcess"
   ],
